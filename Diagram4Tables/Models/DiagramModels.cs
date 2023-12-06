@@ -44,7 +44,7 @@ namespace Diagram4Tables.Models
         }
 
         public class Edge
-        {
+        {//good
             public string Key { get; set; }
             public string Text { get; set; }
             public string FromKey { get; set; }
