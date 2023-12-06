@@ -8,7 +8,8 @@
         public override void Up()
         {
             RenameTable(name: "dbo.DiagaramGroups", newName: "SETUP_MTS_GROUP");
-            RenameTable(name: "dbo.Diagram", newName: "SETUP_MTS_GROUP_QUESTION");
+            RenameTable(name: "dbo.Diagram
+                ", newName: "SETUP_MTS_GROUP_QUESTION");
             RenameTable(name: "dbo.DiagramProblems", newName: "SETUP_MTS_PROPLEM");
             RenameTable(name: "dbo.DiagramQuestions", newName: "SETUP_MTS_QUESTION");
         }

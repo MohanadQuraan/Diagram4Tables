@@ -37,17 +37,10 @@ namespace Diagram4Tables {
 
 
 
-        enum Colors
-        {
-            Red = 2000,
-            Orange = 2001,
-            Blue = 2002
-        }
+
         protected void GenerateDiagram()
         {
-
-         
-        List<SETUP_MTS_GROUP> groups = new List<SETUP_MTS_GROUP>();
+            List<SETUP_MTS_GROUP> groups = new List<SETUP_MTS_GROUP>();
             groups = _db.SETUP_MTS_GROUP.ToList();
 
             List<SETUP_MTS_GROUP_QUESTION> groupquestions = new List<SETUP_MTS_GROUP_QUESTION>();
@@ -214,9 +207,9 @@ namespace Diagram4Tables {
             DevExpress.Web.ASPxDiagram.DiagramNode N = e.Node;
             DiagramItemLocal itemForThisNode = Items.Where(n => n.ID == e.Node.Key + "").FirstOrDefault();
 
-            if (e.Node.Type.ToString() == DiagramShapeType.Ellipse.ToString() && itemForThisNode != null&& itemForThisNode.colorResult!=null)
+            if (e.Node.Type.ToString() == DiagramShapeType.Ellipse.ToString() && itemForThisNode != null)
             {
-                e.Node.Style = "fill:" + Enum.Parse(typeof(Colors), itemForThisNode.colorResult.ToString());
+                e.Node.Style = "fill:" + itemForThisNode.YesColor;
             }
 
         }
