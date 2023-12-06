@@ -35,7 +35,13 @@ namespace Diagram4Tables {
             }
         }
 
-
+        enum Colors
+        {
+            Red=2000, 
+            Orange=2001, 
+            Blue = 2002,
+                 
+        }
 
 
         protected void GenerateDiagram()
@@ -209,7 +215,7 @@ namespace Diagram4Tables {
 
             if (e.Node.Type.ToString() == DiagramShapeType.Ellipse.ToString() && itemForThisNode != null)
             {
-                e.Node.Style = "fill:" + itemForThisNode.YesColor;
+                e.Node.Style = "fill:" + (Colors)Enum.Parse(typeof(Colors), itemForThisNode.colorResult.ToString());
             }
 
         }

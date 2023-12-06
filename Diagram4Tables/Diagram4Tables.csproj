@@ -118,11 +118,11 @@
       <DependentUpon>202312060739374_updateTablesName.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\DiagramGroupQuestion.cs" />
+    <Compile Include="Models\SETUP_MTS_GROUP_QUESTION.cs" />
     <Compile Include="Models\DiagramModels.cs" />
-    <Compile Include="Models\DiagramProblem.cs" />
-    <Compile Include="Models\DiagramQuestion.cs" />
-    <Compile Include="Models\DiagramGroup.cs" />
+    <Compile Include="Models\SETUP_MTS_PROPLEM.cs" />
+    <Compile Include="Models\SETUP_MTS_QUESTION.cs" />
+    <Compile Include="Models\SETUP_MTS_GROUP.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.master.cs">
       <DependentUpon>Site.master</DependentUpon>
